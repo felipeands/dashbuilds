@@ -1,3 +1,13 @@
-<p>
-  functional-tests works!
-</p>
+<section class="functional-tests" [class]="boardStatuses[data.status]">
+
+  <h1>Functional tests</h1>
+
+  <div class="result">
+
+    <div class="percentage">{{data.percentage}}%</div> 
+    <span>{{data.passed}}</span> of
+    <span>{{data.total}}</span>
+
+  </div>
+
+</section>

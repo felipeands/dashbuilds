@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import { Metric } from './../../../interfaces/metric.interface';
+import { BoardStatus } from './../../../enums/board-status.enum';
+import { MetricResultDirection } from './../../../enums/metric-result-direction.enum';
 
 @Component({
   selector: 'app-metrics',
@@ -7,9 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MetricsComponent implements OnInit {
 
+  @Input() data: Metric;
+
+  public metricResultDirections = MetricResultDirection;
+  public boardStatuses = BoardStatus;
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }

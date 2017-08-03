@@ -13,8 +13,8 @@
 
   <ul>
     <li *ngFor="let board of boardItems">
-      <app-build *ngIf="board.type == 1" [board]="board"></app-build>
-      <app-firewall *ngIf="board.type == 2" [board]="board"></app-firewall>
+      <app-build *ngIf="board.type === boardTypes['build']" [board]="board"></app-build>
+      <app-firewall *ngIf="board.type === boardTypes['firewall']" [board]="board"></app-firewall>
     </li>
   </ul>
 

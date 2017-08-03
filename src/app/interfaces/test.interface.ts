@@ -1,5 +1,8 @@
+import { BoardStatus } from './../enums/board-status.enum';
+
 export interface Test {
-  status: number,
+  status: BoardStatus,
+  passed: number,
   total: number,
-  passed: number
+  percentage?: number
 }

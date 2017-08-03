@@ -1,11 +1,13 @@
 import { Widgets } from './widgets.interface';
+import { BoardType } from './../enums/board-type.enum';
+import { BoardStatus } from './../enums/board-status.enum';
 
 export interface BoardItem {
   id: string,
-  type: number,
+  type: BoardType,
   owner: string,
   startDateTime: string,
-  status: number,
+  status: BoardStatus,
   data?: Widgets,
   active?: boolean,
   resultTitle?: string,

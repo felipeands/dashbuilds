@@ -1,3 +1,15 @@
-<p>
-  versions works!
-</p>
+<section class="versions" [class]="boardStatuses[data.status]">
+
+  <h1>Build</h1>
+
+  <div class="items">
+
+    <div class="item" *ngFor="let item of data.items">
+      <div class="name">{{item}}</div>
+    </div>
+
+  </div>
+
+  <div class="date">{{data.dateTime}}</div>
+
+</section>

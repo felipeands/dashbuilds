@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import { Test } from './../../../interfaces/test.interface';
+import { BoardStatus } from './../../../enums/board-status.enum';
 
 @Component({
   selector: 'app-functional-tests',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FunctionalTestsComponent implements OnInit {
 
+  public boardStatuses = BoardStatus;
+
+  @Input() data: Test;
+
   constructor() { }
 
   ngOnInit() {
+    this.data.percentage = Math.ceil((this.data.passed / this.data.total) * 100);
   }
 
 }

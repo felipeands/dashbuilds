@@ -1,5 +1,7 @@
+import { BoardStatus } from './../enums/board-status.enum';
+
 export interface Version {
-  status: number,
+  status: BoardStatus,
   items: string[],
   dateTime: string
 }

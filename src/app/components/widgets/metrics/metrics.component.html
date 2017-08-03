@@ -1,3 +1,14 @@
-<p>
-  metrics works!
-</p>
+<section class="metrics" [class]="boardStatuses[data.status]">
+
+  <h1>Metrics</h1>
+
+  <div class="items">
+
+    <div class="item" *ngFor="let item of data.items" [class]="metricResultDirections[item.direction]">
+      <div class="value">{{item.value}}</div>
+      <div class="name">{{item.name}}</div>
+    </div>
+
+  </div>
+
+</section>

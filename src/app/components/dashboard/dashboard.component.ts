@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { BoardItem } from './../../interfaces/board-item.interface';
 import { DashboardService } from './../../services/dashboard/dashboard.service';
+import { BoardType } from './../../enums/board-type.enum';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,6 +12,7 @@ import { DashboardService } from './../../services/dashboard/dashboard.service';
 export class DashboardComponent implements OnInit {
 
   private boardItems: BoardItem[];
+  public boardTypes = BoardType;
 
   constructor(
     private dashboardService: DashboardService
