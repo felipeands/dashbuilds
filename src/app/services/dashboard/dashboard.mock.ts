@@ -72,10 +72,10 @@ const board2 = {
     version: { status: 2, items: ['Debug', 'Release'], dateTime: '2017-07-26 13:00' },
 
     // unit tests widget
-    unitTest: { status: 1, passed: 14, total: 18 },
+    unitTest: { status: 1, passed: 1, total: 3 },
 
     // functional tests widget
-    functionalTest: { status: 1, passed: 1850, total: 2300, }
+    functionalTest: { status: 1, passed: 33, total: 55, }
 
   }
 };
