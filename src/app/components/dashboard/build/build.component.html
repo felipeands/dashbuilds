@@ -1,3 +1,31 @@
-<p>
-  build works!
-</p>
+<div *ngIf="board">
+
+  <header>
+    <div>{{board.id}}</div>
+    <div>{{board.owner}}</div>
+    <div>{{board.startDateTime}}</div>
+    <div>{{board.status}}</div>
+    <div>Metrics</div>
+    <div>Build</div>
+    <div>Unit tests</div>
+    <div>Funcional tests</div>
+  </header>
+
+  <app-metrics class="widget"></app-metrics>
+
+  <app-versions class="widget"></app-versions>
+
+  <app-unit-tests class="widget"></app-unit-tests>
+
+  <app-functional-tests class="widget"></app-functional-tests>
+
+  <div class="widget">
+    <h3>Result:</h3>
+    <h2>Change Accepted</h2>
+    <h1>Auto-Merged</h1>
+    <div class="actions">
+      <button>Deploy</button>
+    </div>
+  </div>
+
+</div>

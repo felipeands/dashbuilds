@@ -1,3 +1,21 @@
-<p>
-  dashboard works!
-</p>
+<div *ngIf="boardItems">
+
+  <header>
+    <div>Changelist / Build</div>
+    <div>Owner</div>
+    <div>Time started</div>
+    <div>State</div>
+    <div>Metrics</div>
+    <div>Build</div>
+    <div>Unit tests</div>
+    <div>Funcional tests</div>
+  </header>
+
+  <ul>
+    <li *ngFor="let board of boardItems">
+      <app-build *ngIf="board.type == 1" [board]="board"></app-build>
+      <app-firewall *ngIf="board.type == 2" [board]="board"></app-firewall>
+    </li>
+  </ul>
+
+</div>

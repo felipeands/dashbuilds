@@ -20,7 +20,7 @@ import { UnitTestsComponent } from './components/widgets/unit-tests/unit-tests.c
 import { FunctionalTestsComponent } from './components/widgets/functional-tests/functional-tests.component';
 
 // Services
-import { DashboardService } from './services/dashboard.service';
+import { DashboardService } from './services/dashboard/dashboard.service';
 
 
 @NgModule({

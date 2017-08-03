@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import { BoardItem } from './../../../interfaces/board-item.interface';
 
 @Component({
   selector: 'app-firewall',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./firewall.component.scss']
 })
 export class FirewallComponent implements OnInit {
+
+  @Input() board: BoardItem;
 
   constructor() { }
 
