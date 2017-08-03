@@ -6,6 +6,8 @@ export enum BoardStatus {
 
   // build
   "succeed"   = 3,
-  "fail"      = 4
+  "fail"      = 4,
+
+  "running"   = 5
   
 }

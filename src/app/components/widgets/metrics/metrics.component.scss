@@ -1,0 +1,42 @@
+.items {
+  display: flex;
+  flex-wrap:wrap;
+
+    > div {
+      flex-grow: 1;
+      display: inline-block;
+      width: calc(100% * (1/2) - 10px - 1px);
+      text-align: center;
+      margin-bottom: 15px;
+      
+      &.up {
+        &:before {
+          font-family: FontAwesome;
+          content: '\f062';
+        }
+      }
+
+      &.down {
+        &:before {
+          font-family: FontAwesome;
+          content: '\f063';
+        }
+      }
+
+      &.left {
+        &:before {
+          font-family: FontAwesome;
+          content: '\f060';
+        }
+      }
+
+      &.right {
+        &:before {
+          font-family: FontAwesome;
+          content: '\f061';
+        }
+      }
+
+    }
+
+}

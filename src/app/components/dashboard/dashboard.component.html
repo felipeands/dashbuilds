@@ -11,10 +11,9 @@
     <div>Funcional tests</div>
   </header>
 
-  <ul>
-    <li *ngFor="let board of boardItems">
-      <app-build *ngIf="board.type === boardTypes['build']" [board]="board"></app-build>
-      <app-firewall *ngIf="board.type === boardTypes['firewall']" [board]="board"></app-firewall>
+  <ul class="boards">
+    <li *ngFor="let board of boardItems" [class]="boardClasses(board)" [class.active]="isBoardActive(board)">
+      <app-build [board]="board"></app-build>
     </li>
   </ul>
 

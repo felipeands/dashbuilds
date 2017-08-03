@@ -1,8 +1,8 @@
 <div class="board" *ngIf="board">
 
-  <div [class]="boardStatuses[board.status]">
+  <div [class]="boardStatuses[board.status]" [class.active]="board.active">
 
-    <header [class]="boardTypes[board.status]">
+    <header (click)="onClickBoard()">
       <div>{{board.id}}</div>
       <div>{{board.owner}}</div>
       <div>{{board.startDateTime}}</div>
@@ -30,7 +30,7 @@
       </div>
     </header>
 
-    <div class="widgets">
+    <div class="widgets" *ngIf="board.active">
 
       <div class="widget">
         <app-metrics *ngIf="board.data.metric" [data]="board.data.metric"></app-metrics>

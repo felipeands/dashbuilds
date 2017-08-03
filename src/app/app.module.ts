@@ -10,9 +10,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 // Build
 import { BuildComponent } from './components/dashboard/build/build.component';
 
-// Firewall
-import { FirewallComponent } from './components/dashboard/firewall/firewall.component';
-
 // Widgets
 import { MetricsComponent } from './components/widgets/metrics/metrics.component';
 import { VersionsComponent } from './components/widgets/versions/versions.component';
@@ -27,7 +24,6 @@ import { DashboardService } from './services/dashboard/dashboard.service';
   declarations: [
     AppComponent,
     DashboardComponent,
-    FirewallComponent,
     BuildComponent,
     MetricsComponent,
     VersionsComponent,

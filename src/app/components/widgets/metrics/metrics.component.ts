@@ -20,4 +20,11 @@ export class MetricsComponent implements OnInit {
 
   ngOnInit() { }
 
+  boardClasses() {
+    let classes = [];
+    classes.push(this.boardStatuses[this.data.status]);
+    classes.push('metrics');
+    return classes.join(' ');
+  }
+
 }

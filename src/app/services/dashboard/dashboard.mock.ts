@@ -17,12 +17,12 @@ const board1 = {
   type: BoardType.build,
   owner: 'Felipe A',
   startDateTime: '2017-07-25 10:18',
-  status: 1,
+  status: BoardStatus.fail,
   data: <Widgets>{
 
     // metrics widget
     metric: {
-      status: 1,
+      status: BoardStatus.succeed,
       items: [
         { name: 'Test', value: 64, direction: MetricResultDirection.up },
         { name: 'Maintanability', value: 53, direction: MetricResultDirection.up },
@@ -32,15 +32,16 @@ const board1 = {
     },
 
     // versions widget
-    version: { status: 2, items: ['Debug', 'Release'], dateTime: '2017-07-26 13:00' },
+    version: { status: BoardStatus.succeed, items: ['Debug', 'Release'], dateTime: '2017-07-26 13:00' },
 
     // unit tests widget
-    unitTest: { status: 1, passed: 14, total: 18 },
+    unitTest: { status: BoardStatus.succeed, passed: 14, total: 18 },
 
     // functional tests widget
-    functionalTest: { status: 1, passed: 1850, total: 2300, }
+    functionalTest: { status: BoardStatus.succeed, passed: 1850, total: 2300, }
 
-  }
+  },
+  active: false
 };
 
 
@@ -48,18 +49,18 @@ const board1 = {
 
 
 
-// board1 
+// board2 
 const board2 = {
   id: 'Air03',
-  type: BoardType.build,
+  type: BoardType.firewall,
   owner: 'Felipe A',
   startDateTime: '2017-07-26 11:21',
-  status: 1,
+  status: BoardStatus.fail,
   data: <Widgets>{
 
     // metrics widget
     metric: {
-      status: 1,
+      status: BoardStatus.succeed,
       items: [
         { name: 'Test', value: 64, direction: MetricResultDirection.up },
         { name: 'Maintanability', value: 23, direction: MetricResultDirection.down },
@@ -69,15 +70,16 @@ const board2 = {
     },
 
     // versions widget
-    version: { status: 2, items: ['Debug', 'Release'], dateTime: '2017-07-26 13:00' },
+    version: { status: BoardStatus.fail, items: ['Debug', 'Release'], dateTime: '2017-07-26 13:00' },
 
     // unit tests widget
-    unitTest: { status: 1, passed: 1, total: 3 },
+    unitTest: { status: BoardStatus.fail, passed: 1, total: 3 },
 
     // functional tests widget
-    functionalTest: { status: 1, passed: 33, total: 55, }
+    functionalTest: { status: BoardStatus.fail, passed: 33, total: 55, }
 
-  }
+  },
+  active: false
 };
 
 
