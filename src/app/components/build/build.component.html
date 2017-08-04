@@ -33,16 +33,16 @@
     <div class="widgets" *ngIf="board.active">
 
       <div class="widget">
-        <app-metrics *ngIf="board.data.metric" [data]="board.data.metric"></app-metrics>
+        <app-metrics *ngIf="board.data.metric" [data]="board.data.metric" (click)="onDisplayDetails(board.data.metric)"></app-metrics>
       </div>
       <div class="widget">
-        <app-versions *ngIf="board.data.version" [data]="board.data.version"></app-versions>
+        <app-versions *ngIf="board.data.version" [data]="board.data.version" (click)="onDisplayDetails(board.data.version)"></app-versions>
       </div>
       <div class="widget">
-        <app-unit-tests *ngIf="board.data.unitTest" [data]="board.data.unitTest"></app-unit-tests>
+        <app-unit-tests *ngIf="board.data.unitTest" [data]="board.data.unitTest" (click)="onDisplayDetails(board.data.unitTest)"></app-unit-tests>
       </div>
       <div class="widget">
-        <app-functional-tests *ngIf="board.data.functionalTest" [data]="board.data.functionalTest"></app-functional-tests>
+        <app-functional-tests *ngIf="board.data.functionalTest" [data]="board.data.functionalTest" (click)="onDisplayDetails(board.data.functionalTest)"></app-functional-tests>
       </div>
 
       <div class="widget">

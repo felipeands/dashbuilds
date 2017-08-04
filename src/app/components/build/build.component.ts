@@ -50,4 +50,8 @@ export class BuildComponent implements OnInit {
 
   }
 
+  onDisplayDetails(widget) {
+    alert('click widget ' + widget);
+  } 
+
 }

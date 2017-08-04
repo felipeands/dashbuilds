@@ -16,7 +16,7 @@ header {
       border: 1px solid #999;
       border-radius: 2px;
 
-      &.succeed, &.accepted { background: #A8D5E8; }
+      &.succeed, &.accepted { background: #59C96F; }
       &.fail, &.rejected { background: #FFCBCC; }
       &.running { background: blue; }
       &.waiting { border: none; }

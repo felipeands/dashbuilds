@@ -181,7 +181,7 @@ const board5 = {
     version: { status: BoardStatus.succeed, items: ['Debug', 'Release'], dateTime: '2017-07-26 13:00' },
 
     // unit tests widget
-    unitTest: { status: BoardStatus.fail, passed: 1, total: 3 },
+    unitTest: { status: BoardStatus.succeed, passed: 1, total: 3 },
 
     // functional tests widget
     functionalTest: { status: BoardStatus.fail, passed: 33, total: 55, }
@@ -196,7 +196,7 @@ const board5 = {
 
 // board6 - FIREWALL - RUNNING
 const board6 = {
-  id: 'Air 03 - BR',
+  id: 'Goland 006',
   type: BoardType.firewall,
   owner: 'Felipe A',
   startDateTime: '2017-07-26 11:21',
