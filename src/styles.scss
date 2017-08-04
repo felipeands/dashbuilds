@@ -1,14 +1,17 @@
-$succeed: #97E8C9;
-$succeed1: #A8D5E8;
+$success: #97E8C9;
+$success1: #A8D5E8;
 $fail: #FFD9C5;
 $fail1: #FFCBCC;
 $gray: #666;
+$gray1: #CCC;
+
+
+
+
 
 body {
   font-family: Verdana;
   font-size: 0.7em;
-  padding: 0;
-  margin: 0;
 }
 
 section {
@@ -22,18 +25,24 @@ section {
 ul.boards {
 
   li {
-    &.succeed, &.accepted { background: $succeed; }
-    &.fail, &.rejected { background: $fail; }
+    &.succeed, &.accepted { background: $success; }
+    &.succeed, &.accepted, &.rejected, &.running { header { cursor: pointer; } }
+    &.rejected { background: $fail; }
+    &.fail { background: $gray1; color: white; }
 
     &.build {
 
       header {
         >
         :first-child {
+          text-align: left;
+
           &:before {
             font-family: FontAwesome;
             content: '\f109';
             margin-right: 15px;
+            font-size: 1em;
+            vertical-align: text-top;
           }
         }
       }
@@ -45,13 +54,21 @@ ul.boards {
       header {
         >
         :first-child {
+          text-align: left;
+
           &:before {
             font-family: FontAwesome;
             content: '\f06d';
             margin-right: 15px;
+            font-size: 1em;
+            vertical-align: text-top;
           }
         }
       }
+    }
+
+    header {
+      padding: 5px 10px 15px;
     }
     
   }
@@ -63,7 +80,7 @@ ul.boards {
 
   section {
 
-    &.succeed, &.accepted { background-color: $succeed1; }
+    &.succeed, &.accepted { background-color: $success1; }
     &.fail, &.rejected { background-color: $fail1; }
     
     padding: 0 10px;

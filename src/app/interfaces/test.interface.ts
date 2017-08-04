@@ -4,5 +4,5 @@ export interface Test {
   status: BoardStatus,
   passed: number,
   total: number,
-  percentage?: number
+  percent?: number
 }

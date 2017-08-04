@@ -12,7 +12,7 @@ import { BoardStatus } from './../../enums/board-status.enum';
 })
 export class DashboardComponent implements OnInit {
 
-  private boardItems: BoardItem[];
+  public boardItems: BoardItem[];
   public boardTypes = BoardType;
   public boardStatuses = BoardStatus;
 

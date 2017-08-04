@@ -17,7 +17,7 @@ export class FunctionalTestsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.data.percentage = Math.ceil((this.data.passed / this.data.total) * 100);
+    this.data.percent = Math.ceil((this.data.passed / this.data.total) * 100);
   }
 
 }

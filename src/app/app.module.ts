@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 // Build
-import { BuildComponent } from './components/dashboard/build/build.component';
+import { BuildComponent } from './components/build/build.component';
 
 // Widgets
 import { MetricsComponent } from './components/widgets/metrics/metrics.component';

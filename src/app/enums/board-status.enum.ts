@@ -8,6 +8,9 @@ export enum BoardStatus {
   "succeed"   = 3,
   "fail"      = 4,
 
-  "running"   = 5
-  
+  // proccessing
+  "running"   = 5,
+
+  // waiting
+  "waiting"   = 6
 }
