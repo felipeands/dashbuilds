@@ -1,0 +1,26 @@
+.result {
+  text-align: center;
+  margin-top: 15px;
+
+  .percent {
+    font-size: 2em;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+}
+
+.grafic {
+  display: block;
+  height: 20px;
+  background: red;
+  margin-top: 20px;
+
+  .completed {
+    height: 100%;
+    background: green;
+  }
+
+}

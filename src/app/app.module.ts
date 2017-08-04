@@ -15,6 +15,7 @@ import { MetricsComponent } from './components/widgets/metrics/metrics.component
 import { VersionsComponent } from './components/widgets/versions/versions.component';
 import { UnitTestsComponent } from './components/widgets/unit-tests/unit-tests.component';
 import { FunctionalTestsComponent } from './components/widgets/functional-tests/functional-tests.component';
+import { ResultsComponent } from './components/widgets/results/results.component';
 
 // Services
 import { DashboardService } from './services/dashboard/dashboard.service';
@@ -28,7 +29,8 @@ import { DashboardService } from './services/dashboard/dashboard.service';
     MetricsComponent,
     VersionsComponent,
     UnitTestsComponent,
-    FunctionalTestsComponent
+    FunctionalTestsComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule

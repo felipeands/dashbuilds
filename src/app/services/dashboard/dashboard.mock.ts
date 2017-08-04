@@ -104,10 +104,10 @@ const board3 = {
     version: { status: BoardStatus.running, items: ['Debug', 'Release'], dateTime: '2017-07-26 13:00' },
 
     // unit tests widget
-    unitTest: { status: BoardStatus.waiting, passed: 1, total: 3 },
+    unitTest: { status: BoardStatus.waiting, passed: 0, total: 3 },
 
     // functional tests widget
-    functionalTest: { status: BoardStatus.waiting, passed: 33, total: 55, }
+    functionalTest: { status: BoardStatus.waiting, passed: 0, total: 55, }
 
   }
 };
@@ -218,10 +218,10 @@ const board6 = {
     version: { status: BoardStatus.running, items: ['Debug', 'Release'], dateTime: '2017-07-26 13:00' },
 
     // unit tests widget
-    unitTest: { status: BoardStatus.waiting, passed: 1, total: 3 },
+    unitTest: { status: BoardStatus.waiting, passed: 0, total: 3 },
 
     // functional tests widget
-    functionalTest: { status: BoardStatus.waiting, passed: 33, total: 55, }
+    functionalTest: { status: BoardStatus.waiting, passed: 0, total: 55, }
 
   }
 };

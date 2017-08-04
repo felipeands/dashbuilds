@@ -9,7 +9,5 @@ export interface BoardItem {
   startDateTime: string,
   status: BoardStatus,
   data?: Widgets,
-  active?: boolean,
-  resultTitle?: string,
-  resultSubtitle?: string
+  active?: boolean
 }

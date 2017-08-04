@@ -3,7 +3,7 @@
   <div [class]="boardStatuses[board.status]" [class.active]="board.active">
 
     <header (click)="onClickBoard()">
-      <div>{{board.id}}</div>
+      <div><span>{{board.id}}</span></div>
       <div>{{board.owner}}</div>
       <div>{{board.startDateTime}}</div>
       <div>{{boardStatuses[board.status]}}</div>
@@ -46,12 +46,7 @@
       </div>
 
       <div class="widget">
-        <h3>Result:</h3>
-        <h2>Change Accepted</h2>
-        <h1>Auto-Merged</h1>
-        <div class="actions">
-          <button>Deploy</button>
-        </div>
+        <app-results *ngIf="board.status !== boardStatuses.running && board.status !== boardStatuses.waiting" [data]="board"></app-results>
       </div>
 
     </div>
