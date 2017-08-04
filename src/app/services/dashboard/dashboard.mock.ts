@@ -1,5 +1,6 @@
 import { BoardItem } from './../../interfaces/board-item.interface';
 import { Widgets } from './../../interfaces/widgets.interface';
+import { Result } from './../../interfaces/result.interface';
 
 import { BoardType } from './../../enums/board-type.enum';
 import { BoardStatus } from './../../enums/board-status.enum';
@@ -35,6 +36,12 @@ const board1 = {
     // functional tests widget
     functionalTest: { status: BoardStatus.succeed, passed: 1850, total: 2300, }
 
+  },
+  result: <Result> {
+    title: 'Build',
+    subTitle: 'Success',
+    buttonText: 'View',
+    buttonTarget: 'http://www.google.com'
   }
 };
 

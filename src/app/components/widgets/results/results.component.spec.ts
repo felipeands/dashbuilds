@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FunctionalTestsComponent } from './functional-tests.component';
+import { FunctionalTestsComponent } from './../functional-tests/functional-tests.component';
 
 describe('FunctionalTestsComponent', () => {
   let component: FunctionalTestsComponent;

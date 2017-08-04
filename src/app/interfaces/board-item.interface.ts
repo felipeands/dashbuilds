@@ -1,4 +1,5 @@
 import { Widgets } from './widgets.interface';
+import { Result } from './result.interface';
 import { BoardType } from './../enums/board-type.enum';
 import { BoardStatus } from './../enums/board-status.enum';
 
@@ -9,5 +10,6 @@ export interface BoardItem {
   startDateTime: string,
   status: BoardStatus,
   data?: Widgets,
-  active?: boolean
+  active?: boolean,
+  result?: Result
 }

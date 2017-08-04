@@ -1,38 +1,10 @@
-<section class="results">
+<section class="results" *ngIf="data.result">
 
-  <!-- firewall -->
-  <div *ngIf="data.type === boardTypes.firewall">
-
-    <div *ngIf="data.status === boardStatuses.accepted">
-      <h3>Result:</h3>
-      <h2>Updated</h2>
-      <h1>Success</h1>
-      <div class="actions">
-        <button>Download</button>
-      </div>
-    </div>
-
-    <div *ngIf="data.status === boardStatuses.rejected">
-      <h3>Result:</h3>
-      <h2>Fail</h2>
-      <h1>Something wrong</h1>
-      <div class="actions">
-        <button>Review</button>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- build -->
-  <div *ngIf="data.type === boardTypes.build">
-
-    <h3>Result:</h3>
-    <h2>Change Accepted</h2>
-    <h1>Auto-Merged</h1>
-    <div class="actions">
-      <button>Deploy</button>
-    </div>
-
+  <h3>Result:</h3>
+  <h2 *ngIf="data.result.title">{{data.result.title}}</h2>
+  <h1 *ngIf="data.result.subTitle">{{data.result.subTitle}}</h1>
+  <div class="actions" *ngIf="data.result.buttonText && data.result.buttonTarget">
+    <button>{{data.result.buttonText}}</button>
   </div>
 
 </section>
