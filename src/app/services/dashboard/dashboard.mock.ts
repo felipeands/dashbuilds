@@ -31,10 +31,10 @@ const board1 = {
     version: { status: BoardStatus.succeed, items: ['Debug', 'Release'], dateTime: '2017-07-26 13:00' },
 
     // unit tests widget
-    unitTest: { status: BoardStatus.succeed, passed: 14, total: 18 },
+    unitTest: { status: BoardStatus.succeed, passed: 18, total: 18 },
 
     // functional tests widget
-    functionalTest: { status: BoardStatus.succeed, passed: 1850, total: 2300, }
+    functionalTest: { status: BoardStatus.succeed, passed: 2300, total: 2300, }
 
   },
   result: <Result> {
@@ -151,10 +151,10 @@ const board4 = {
     version: { status: BoardStatus.succeed, items: ['Debug', 'Release'], dateTime: '2017-07-26 13:00' },
 
     // unit tests widget
-    unitTest: { status: BoardStatus.succeed, passed: 14, total: 18 },
+    unitTest: { status: BoardStatus.succeed, passed: 11, total: 11 },
 
     // functional tests widget
-    functionalTest: { status: BoardStatus.succeed, passed: 1850, total: 2300, }
+    functionalTest: { status: BoardStatus.succeed, passed: 114, total: 114, }
 
   }
 };
