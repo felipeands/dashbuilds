@@ -155,7 +155,10 @@ const board4 = {
 
     // functional tests widget
     functionalTest: { status: BoardStatus.succeed, passed: 114, total: 114, }
-
+  },
+  result: <Result> {
+    title: 'Rules OK',
+    subTitle: 'All Applied',
   }
 };
 
@@ -188,7 +191,7 @@ const board5 = {
     version: { status: BoardStatus.succeed, items: ['Debug', 'Release'], dateTime: '2017-07-26 13:00' },
 
     // unit tests widget
-    unitTest: { status: BoardStatus.succeed, passed: 1, total: 3 },
+    unitTest: { status: BoardStatus.succeed, passed: 3, total: 3 },
 
     // functional tests widget
     functionalTest: { status: BoardStatus.fail, passed: 33, total: 55, }
