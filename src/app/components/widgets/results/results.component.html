@@ -1,6 +1,6 @@
 <section class="results" *ngIf="data.result">
 
-  <h3>Result:</h3>
+  <div>Result:</div>
   <h2 *ngIf="data.result.title">{{data.result.title}}</h2>
   <h1 *ngIf="data.result.subTitle">{{data.result.subTitle}}</h1>
   <div class="actions" *ngIf="data.result.buttonText && data.result.buttonTarget">

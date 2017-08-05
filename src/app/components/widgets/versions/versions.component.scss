@@ -1,0 +1,27 @@
+.date {
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+
+  .item {
+    position: relative;
+
+    &:before {      
+      content: "\f108";
+      font-family: FontAwesome;
+      margin: 0 auto;
+      position: absolute;
+      left: -10%;
+      font-size: 4em;
+    }
+
+    .name {
+      margin-top: 50px;
+    }
+  }
+
+}
